@@ -1,6 +1,6 @@
-No-Broker Kathmandu
+No-Broker Kathmandu - Prototype
 
-Modern, production-ready rental marketplace connecting tenants with property owners in Kathmandu — without brokers. This monorepo includes a Node.js/Express backend with PostgreSQL and a React + TypeScript frontend. Real-time messaging, visits scheduling, listings management, notifications, ads, recommendations, payments, and admin/staff tooling are included.
+Modern, rental marketplace connecting tenants with property owners in Kathmandu — without brokers. This monorepo includes a Node.js/Express backend with PostgreSQL and a React + TypeScript frontend. Real-time messaging, visits scheduling, listings management, notifications, ads, recommendations, payments, and admin/staff tooling are included.
 
 ## Tech Stack
 - Backend: Node.js, Express, Socket.IO, PostgreSQL (`pg`)
