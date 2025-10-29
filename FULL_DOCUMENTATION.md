@@ -255,10 +255,6 @@ Glossary
 - Visit: A scheduled appointment for viewing a listing
 - Conversation: Message thread between two users
 
-References
-- `backend/server.js`, `backend/config/database.js`, route files under `backend/routes/`
-- `frontend/src/*` for UI flows and Redux slices
-
 Assumptions
 - Payment provider integration will use tokenized methods with PCI-compliant provider
 - Images stored on local uploads path in dev; object storage in prod
