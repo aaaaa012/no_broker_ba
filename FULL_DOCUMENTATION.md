@@ -169,21 +169,21 @@ Compliance & Privacy
 
 Technical Architecture
 High-Level Architecture
-- See `diagrams/system_architecture.mmd`
+- See `diagrams/system_architecture.png`
 
 Database Schema / ERD
-- See `diagrams/database_schema.mmd`
+- See `diagrams/database_schema.png`
 
 Module Logic Flows
-- Listings: `diagrams/module_flow_listings.mmd`
-- Visits: `diagrams/module_flow_visits.mmd`
-- Messaging: `diagrams/module_flow_messaging.mmd`
-- Notifications: `diagrams/module_flow_notifications.mmd`
+- Listings: `diagrams/module_flow_listings.png`
+- Visits: `diagrams/module_flow_visits.png`
+- Messaging: `diagrams/module_flow_messaging.png`
+- Notifications: `diagrams/module_flow_notifications.png`
 
 Use Case Diagrams
-- Listings: `diagrams/use_case_listings.mmd`
-- Visits: `diagrams/use_case_visits.mmd`
-- Messaging: `diagrams/use_case_messaging.mmd`
+- Listings: `diagrams/use_case_listings.png`
+- Visits: `diagrams/use_case_visits.png`
+- Messaging: `diagrams/use_case_messaging.png`
 
 Use Cases & User Stories
 Listings
@@ -236,12 +236,6 @@ listings.csv: id,owner_id,title,rent
 visits.csv: id,listing_id,tenant_id,status
 ```
 
-Deployment & Setup
-System Requirements
-- Node 18+, PostgreSQL 13+, modern browser
-
-Installation
-- See README quick start; configure environment from `.env.production`
 
 Configuration
 - Backend env
