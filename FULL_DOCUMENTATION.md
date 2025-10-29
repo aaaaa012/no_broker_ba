@@ -1,4 +1,4 @@
-No-Broker Kathmandu – Full Documentation
+No-Broker Kathmandu – Prototype Full Documentation
 
 Table of Contents
 - Project Overview
