@@ -1,8 +1,0 @@
-flowchart TD
-  A[Event occurs: message/visit/decision] --> B[Create notification record]
-  B --> C[Broadcast via Socket.IO to user room]
-  C --> D[Client updates in-app center]
-  D --> E[User marks read]
-  E --> F[PUT /api/notifications/{id}/read]
-  F --> G[Persist read=true]
-
