@@ -49,27 +49,10 @@ npm run dev
 Health Check
 - Backend: `GET /api/health`
 
-## Architecture Preview
-High-level architecture is documented in `diagrams/system_architecture.mmd` and referenced from `FULL_DOCUMENTATION.md`.
-
-## Repository Structure
-```
-backend/        # Express server, routes, middleware
-frontend/       # React + TS app
-database/       # SQL schemas and migrations
-diagrams/       # Mermaid diagrams (architecture, schema, module flows, use cases)
-README.md
-FULL_DOCUMENTATION.md
-```
-
-## License
-Copyright © 2025. All rights reserved.
 
 # No-Broker Kathmandu
 
 Modern, full-stack property rental platform for Kathmandu, Nepal — connecting tenants and property owners directly, with streamlined discovery, messaging, visit scheduling, KYC, analytics, and monetization.
-
-[Business Analyst Overview](docs/Business-Analyst-Overview.md) · [Deployment Guide](DEPLOYMENT_GUIDE.md) · [Optimization Plan](PRODUCTION_OPTIMIZATION_PLAN.md) · [Messaging System](MESSAGING_SYSTEM_IMPLEMENTATION.md) · [Database Fixes](DATABASE_FIXES.md)
 
 ---
 
@@ -121,11 +104,6 @@ Modern, full-stack property rental platform for Kathmandu, Nepal — connecting 
 - **Multer** for file uploads
 - **CORS** enabled for network access
 
-Key files and structure:
-- `backend/server.js` — Express app, middleware, routing
-- `backend/routes/*.js` — Feature routes (auth, listings, visits, messages, favorites, ratings, users, admin, owners, ads, notifications, payments, recommendations)
-- `backend/middleware/*.js` — Auth and monitoring
-- `backend/config/database.js` — DB connection and pooling
 
 ### Frontend
 - **React** with TypeScript
@@ -134,16 +112,7 @@ Key files and structure:
 - **Tailwind CSS** for styling
 - **Axios** for API communication
 
-Key files and structure:
-- `frontend/src/pages/*` — Core pages (Home, Listings, Detail, Create, Dashboards, Auth, Terms/Privacy)
-- `frontend/src/components/*` — Layout, messaging, notifications, ads, reports
-- `frontend/src/store/*` — Redux store and slices (auth, listings, visits, favorites, notifications, payments, recommendations, ui)
-- `frontend/src/services/*` — API clients (authAPI, listingsAPI, visitsAPI, messagingService)
-- `frontend/tailwind.config.js` — Design system extensions
 
-### Database
-- PostgreSQL with scripts in `database/`
-- Start from `database/schema.sql` then apply feature scripts (favorites, photos, views, messaging, ads, visit decisions, notifications, optimization)
 
 ## 📋 Prerequisites
 
@@ -165,22 +134,8 @@ cd backend
 npm install
 ```
 
-### 3. Database Setup
-- Create a PostgreSQL database
-- Update the database configuration in `backend/.env`
-- Run the base schema then feature scripts:
-  - `database/schema.sql`
-  - `database/add_favorites_table.sql`
-  - `database/add_listing_photos_table.sql`
-  - `database/add_listing_views_table.sql`
-  - `database/add_messaging_tables.sql`
-  - `database/add_notifications_updated_at.sql`
-  - `database/add_visit_decisions_columns.sql`
-  - `database/ads_schema.sql`
-  - `database/production_optimization.sql`
-  - See `DATABASE_FIXES.md` for context
 
-### 4. Environment Variables
+### 3. Environment Variables
 Create `backend/.env` file:
 ```env
 PORT=5000
@@ -194,13 +149,13 @@ BCRYPT_ROUNDS=10
 FRONTEND_URL=http://localhost:3000
 ```
 
-### 5. Frontend Setup
+### 4. Frontend Setup
 ```bash
 cd frontend
 npm install
 ```
 
-### 6. Start the Application
+### 5. Start the Application
 
 #### Development Mode
 ```bash
@@ -268,7 +223,7 @@ get-network-info.bat
 
 ## 📊 API Endpoints
 
-For detailed API docs and workflows, see `NO_BROKER_KATHMANDU_DOCUMENTATION.txt` (Sections 3–4). Below is a high-level summary.
+ Below is a high-level summary.
 
 ### Authentication
 - `POST /api/auth/register` - User registration
@@ -331,17 +286,6 @@ This project is licensed under the MIT License.
 
 For support and questions:
 - Create an issue in the repository
-- Contact the development team
-
-## 🎯 Roadmap
-
-- [ ] Mobile app development (React Native)
-- [ ] Payment integration and document signing
-- [ ] Advanced analytics and dashboards
-- [ ] Multi-language support and SEO
-- [ ] Push notifications and PWA
-- [ ] Video tours and virtual walkthroughs
-- [ ] AI-powered recommendations
 
 ---
 
