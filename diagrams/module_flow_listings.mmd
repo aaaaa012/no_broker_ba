@@ -1,0 +1,19 @@
+flowchart TD
+  A[Tenant searches listings] --> B{Apply filters?}
+  B -- Yes --> C[Build query with pagination]
+  B -- No --> D[Default query]
+  C --> E[GET /api/listings]
+  D --> E
+  E --> F[Validate params]
+  F --> G[Query PostgreSQL]
+  G --> H[Return results]
+  H --> I[Render list UI]
+
+  subgraph Owner Flow
+    O1[Owner creates listing]
+    O1 --> O2[POST /api/listings]
+    O2 --> O3[Validate auth + payload]
+    O3 --> O4[Insert listing + photos]
+    O4 --> O5[201 Created]
+  end
+

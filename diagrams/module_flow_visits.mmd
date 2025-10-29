@@ -1,0 +1,10 @@
+flowchart TD
+  A[Tenant requests visit] --> B[POST /api/visits]
+  B --> C[Validate JWT + payload]
+  C --> D[Create visit: status=pending]
+  D --> E[Notify owner]
+  E --> F[Owner decides]
+  F --> G[PUT /api/visits/{id}/decision]
+  G --> H[Update status]
+  H --> I[Notify tenant]
+

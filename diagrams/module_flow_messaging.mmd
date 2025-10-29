@@ -1,0 +1,18 @@
+sequenceDiagram
+  participant U as User (Client)
+  participant WS as Socket.IO
+  participant API as Express API
+  participant DB as PostgreSQL
+
+  U->>WS: authenticate { token }
+  WS-->>U: authenticated
+
+  U->>WS: send_message { conversationId, messageText, receiverId }
+  WS->>U: message_sent
+  WS-->>U: new_message (receiver)
+
+  U->>API: GET /api/messages/conversations
+  API->>DB: SELECT conversations
+  DB-->>API: rows
+  API-->>U: conversation list
+
