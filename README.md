@@ -16,10 +16,17 @@
 
 ## 📂 Repository Structure
 
-The documentation is split for clarity. Please review the specific sections below:
+This project's documentation is organized for ease of access:
 
-*   **[Full Documentation](./FULL_DOCUMENTATION.md)**: The Master document containing all specifications.
-*   **[Diagrams](./diagrams/)**: Visual workflows and ERD.
+| Document | Description |
+| :--- | :--- |
+| **[Project Overview](./documentation/01_Project_Overview.md)** | Goals, Scope, and Stakeholders. |
+| **[Requirements](./documentation/02_Requirements.md)** | User roles, Permissions, and NFRs. |
+| **[API Reference](./documentation/03_API_Reference.md)** | Endpoints, Payloads, and Examples. |
+| **[Architecture](./documentation/04_Architecture.md)** | System Design, Database Schema, and Flow Diagrams. |
+| **[Use Cases](./documentation/05_Use_Cases.md)** | User Stories and Activity Diagrams. |
+| **[Testing Criteria](./documentation/06_Testing.md)** | QA strategy, UAT scenarios, and Test Data. |
+| **[Deployment](./documentation/07_Deployment.md)** | Configuration variables and Deployment strategy. |
 
 ---
 
